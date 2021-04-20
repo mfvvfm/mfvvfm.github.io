@@ -164,6 +164,28 @@ a.social:hover {
   clear: both;
 }
 
+#btn {
+  display: block;
+  margin: auto;
+}
+
+.box {
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+  display: inline-block;
+  background-color: black;
+  height: 100px;
+  width: 100px;
+  margin: 10px auto;
+}
+
+.grow {
+  width: 1000px;
+}
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
 

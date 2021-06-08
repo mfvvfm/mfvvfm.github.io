@@ -1,52 +1,118 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Moises Veiga's Profile</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
-  <body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="main-nav">
-        <ul class="nav">
-          <li class="name">Moises Veiga</li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-        </ul>
-    </div>
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-    <header>
-      <img src="images/me.png" alt="Drawing of Moises Veiga" class="profile-image">
-      <h1 class="tag name">Hello, I’m Moises.</h1>
-      <p class="tag location">My home is London, UK.</p>
-    </header>
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-    <main class="flex">
-      <div class="card">
-        <h2>Background</h2>
-        <p>I’m an aspiring web designer who loves everything about the web. I’m excited to bring my life experience to the process of building fantastic looking websites.</p>
-      </div>
+        <title>Moises Veiga's Portfolio</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Welcome</a>
+                </div>
 
-      <div class="card">
-        <h2>Goals</h2>
-        <p>I want to master the process of building web sites and increase my knowledge, skills and abilities in:</p>
-        <ul class="skills">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
-        <p>I’d like to work for a web design firm helping clients create an impressive online presence.</p>
-      </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
-    </main>
-    <footer>
-      <ul>
-        <li><a href="https://twitter.com/MoisesFV" target="_blank" class="social twitter">Twitter</a></li>
-        <li><a href="https://www.linkedin.com/in/moises-veiga-35a480130/" target="_blank" class="social linkedin">LinkedIn</a></li>
-        <li><a href="https://github.com/mfvvfm" target="_blank" class="social github">Github</a></li>
-      </ul>
-      <p class="copyright">Copyright 2021, Moises Veiga</p>
-    </footer>
-  </body>
-  </html>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Moises</span><br>Front End Developer</h1>
+
+                    <a href="#" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/moises-veiga-35a480130/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/mfvvfm" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">    
+                    <img src="assets/img/me.png" alt="">
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <a href="https://thirsty-neumann-f78335.netlify.app" target="_blank"><img src="assets/img/work1.jpg" alt="">
+                        <h3>Scoreboard</h3></a>
+                    </div>
+                    <div class="work__img">
+                        <a href="https://thirsty-lovelace-01857b.netlify.app" target="_blank"><img src="assets/img/work2.jpg" alt="">
+                        <h3>Course Directory</h3></a>
+                    </div>
+                    <div class="work__img">
+                        <a href="https://goofy-curie-855e05.netlify.app" target="_blank"><img src="assets/img/work3.jpg" alt="">
+                        <h3>Gif Search</h3></a>
+                    </div>
+                    <div class="work__img">
+                        <a href="https://tender-curran-06c023.netlify.app" target="_blank"><img src="assets/img/work4.jpg" alt="" style="height:auto;">
+                        <h3>TODO List</h3></a>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                        <h3>Coming Soon</h3>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                        <h3>Coming Soon</h3>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="https://formspree.io/f/xnqlvaln" method="POST" class="contact__form">
+                        <input name= "fname" type="text" placeholder="Name" class="contact__input">
+                        <input name="email" type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="contact" placeholder="Send me good news please! I'm on my knees" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input name="submit" type="submit" value="Send" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title"></p>
+            <div class="footer__social">
+                <a href="https://twitter.com/MoisesFV" target="_blank" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p>&#169; Copyright 2021, Moises Veiga</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

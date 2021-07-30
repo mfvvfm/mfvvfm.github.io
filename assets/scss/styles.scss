@@ -7,13 +7,13 @@
     --font-semi: 600;
 }
 
-/*===== Colores =====*/
+/*===== Colours =====*/
 :root{
     --first-color: #4070F4;
     --second-color: #0E2431;
 }
 
-/*===== Fuente y tipografia =====*/
+/*===== Font and typography =====*/
 :root{
     --body-font: 'Poppins', sans-serif;
 
@@ -28,7 +28,7 @@
     }
 }
 
-/*===== Margenes =====*/
+/*===== Margins =====*/
 :root{
     --mb-1: 0.5rem;
     --mb-2: 1rem;
@@ -364,25 +364,7 @@ img{
         }
     }
 
-    .about{
-        &__container{
-            grid-template-columns: repeat(2,1fr);
-            align-items: center;
-            text-align: initial;
-        }
-        &__img{
-            & img{
-                width: 300px;
-            }
-        }
-    }
-    .skills{
-        &__container{
-            grid-template-columns: repeat(2,1fr);
-            align-items: center;
-            text-align: initial;
-        }
-    }
+
     .work{
         &__container{
             grid-template-columns: repeat(3,1fr);
